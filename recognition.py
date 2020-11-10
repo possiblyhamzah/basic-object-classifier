@@ -5,12 +5,12 @@ import time
 import cv2
 # Check command-line arguments
 
-if len(sys.argv) != 2:
-    sys.exit("Usage: python recognition.py model")
+if len(sys.argv) != 3:
+    sys.exit("Usage: python3 recognition.py model path/to/img.jpg")
 model = tf.keras.models.load_model(sys.argv[1])
 
 def main():
-    img = cv2.imread(f'path/to/img.jpg')
+    img = cv2.imread(sys.argv[2])
     img = cv2.resize(img, (30, 30))
 
     classification = model.predict(
