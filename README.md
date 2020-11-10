@@ -18,3 +18,5 @@ python3 recognition.py model.h5 path/to/img.jpg
 ```
 
 I have included two folders in the 'folder' directory -- one of which includes picures of cats and the other of dogs. The recogniition.py script will (with some probability) classify a particular image as either a cat or a dog.
+
+All pictures have been taken from https://unsplash.com/
