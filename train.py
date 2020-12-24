@@ -89,7 +89,12 @@ def get_model():
         tf.keras.layers.Conv2D(
             32, (3, 3), activation="relu", input_shape=(30, 30, 3)
         ),
+        
+        tf.keras.layers.Conv2D(
+            32, (3, 3), activation="relu", input_shape=(30, 30, 3)
+        ),
 
+        
         # Max-pooling layer, using 2x2 pool size
         tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
 
@@ -97,8 +102,9 @@ def get_model():
         tf.keras.layers.Flatten(),
 
         # Add a hidden layer with dropout
-        tf.keras.layers.Dense(128, activation="relu"),
-        tf.keras.layers.Dropout(0.5),
+        tf.keras.layers.Dense(256, activation="relu"),
+        tf.keras.layers.Dense(256, activation="relu"),
+        tf.keras.layers.Dropout(0.2),
 
         # Add an output layer with output units for all 10 digits
         tf.keras.layers.Dense(2, activation="softmax")
