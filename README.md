@@ -1,4 +1,4 @@
-# Super Duper Facial Recognition
+# Basic Object Classifier
 A program that uses the Tensorflow library to make a neural network for facial recognition/image classification.
 
 ## How to use
