@@ -10,7 +10,7 @@ pip3 install tensorflow cv2 numpy
 ## Usage
 Run the following command to make a model:
 ```bash
-python3 train.py folder model.h5
+python3 train.py folder model.h5 scikit-learn
 ```
 And then the following command to have the program to classify the image:
 ```bash
