@@ -4,13 +4,13 @@ A program that uses the Tensorflow library to make a neural network for facial r
 ## How to use
 Run the following command to download the required libraries
 ```bash
-pip3 install tensorflow cv2 numpy
+pip3 install tensorflow opencv-python numpy scikit-learn
 ```
 
 ## Usage
 Run the following command to make a model:
 ```bash
-python3 train.py folder model.h5 scikit-learn
+python3 train.py folder model.h5
 ```
 And then the following command to have the program to classify the image:
 ```bash
